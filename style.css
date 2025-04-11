@@ -1,0 +1,152 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+background: url('Images/background.jpg') no-repeat center center fixed;
+background-size: cover;
+color: #090909;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+h1{
+color: #f4f3f3;
+margin-bottom: auto;
+
+}
+
+.container {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+header {
+padding: 20px;
+background-color: rgba(22, 21, 21, 0.7);
+text-align: center;
+}
+
+.logo-heading {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.logo {
+height: 80px;
+margin-bottom: 10px;
+
+
+}
+
+.logo-heading h1 {
+font-size: 2.5rem;
+font-weight: bold;
+}
+
+.hero {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 30px;
+}
+
+.hero-content h2 {
+font-size: 3rem;
+margin-bottom: 2px;
+margin-top: -150px;
+margin-right: 100px;
+
+}
+
+.hero-content p {
+font-size: 1.5rem;
+max-width: 600px;
+margin: 0 auto;
+}
+
+p{
+text-align: center;
+}
+
+footer {
+background-color: rgba(0, 0, 0, 0.85);
+padding: 15px 0;
+text-align: center;
+}
+
+
+.bottom-nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding: 0;
+margin-bottom: 10px;
+}
+
+.bottom-nav ul li {
+margin: 5px 15px;
+}
+
+.bottom-nav ul li a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s;
+}
+
+.bottom-nav ul li a:hover {
+color: #ff2c02;
+}
+
+footer p {
+font-size: 0.9rem;
+color: #ccc;
+}
+
+.about-content {
+padding: 40px;
+background-color: rgba(0, 0, 0, 0.6);
+margin: 20px;
+border-radius: 10px;
+color: white;
+}
+
+.about-content h2 {
+text-align: center;           
+font-size: 2.5rem;
+margin-bottom: 30px;
+}
+
+
+
+.about-section {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+gap: 30px;
+}
+
+.about-img {
+max-width: 400px;
+width: 100%;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.about-text {
+max-width: 600px;
+font-size: 1.2rem;
+line-height: 1.6;
+}
+

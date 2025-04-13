@@ -5,7 +5,7 @@ try {
     $host = 'localhost';
     $dbname = 'gym';
     $username = 'root';
-    $password = 'nethmitha';
+    $password = '';
     
     // Establish PDO connection
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

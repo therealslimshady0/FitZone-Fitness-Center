@@ -1,7 +1,7 @@
 <?php
 // Database connection
 try {
-    $pdo = new PDO("mysql:host=localhost;dbname=gym", 'root', 'nethmitha');
+    $pdo = new PDO("mysql:host=localhost;dbname=gym", 'root', '');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die("DB Connection failed: " . $e->getMessage());
@@ -37,7 +37,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <textarea name="content" placeholder="Blog Content" rows="10" cols="50" required></textarea><br><br>
         <button type="submit">Publish</button>
     </form>
-
-    <p><a href="blog.php">View Blog</a></p>
 </body>
 </html>

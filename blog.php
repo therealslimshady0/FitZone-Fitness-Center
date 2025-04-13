@@ -1,7 +1,7 @@
 <?php
 // Database connection
 try {
-    $pdo = new PDO("mysql:host=localhost;dbname=gym", 'root', 'nethmitha');
+    $pdo = new PDO("mysql:host=localhost;dbname=gym", 'root', '');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die("DB Connection failed: " . $e->getMessage());
@@ -19,8 +19,6 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
     <h1>Blog Posts</h1>
-
-    <p><a href="post_blog.php">Post a New Blog</a></p>
 
     <?php if ($posts): ?>
         <?php foreach ($posts as $post): ?>

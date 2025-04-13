@@ -5,7 +5,7 @@ try {
     $host = 'localhost';
     $dbname = 'gym';
     $username = 'root';
-    $password = 'nethmitha';
+    $password = '';
 
     // Establish the PDO connection
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['email'] = $user['email'];
 
         // Redirect to a welcome or dashboard page
-        header("Location: welcome.php");
+        header("Location: index.php");
         exit;
     } else {
         $message = "Invalid username/email or password.";
